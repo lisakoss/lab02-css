@@ -4,7 +4,7 @@
 
 body {
   font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 300;
   background-color: #E9EAEE;
   margin: 0;
@@ -29,17 +29,27 @@ svg {
   height: 1em;
 }
 
+.rounded-edges {
+  border-radius: 10px;
+}
+
 nav {
-  background-color: #333;
+  background-color: rgba(24, 28, 34, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   font-size: 16px;
   color: #FFF;
+  z-index: 1;
 }
 nav ul {
   padding-left: 15px;
   margin-bottom: 0;
 }
 nav li {
+  display: inline-block;
+  padding: 0.5em;
   font-variant: small-caps;
 }
 nav a {
@@ -58,21 +68,32 @@ nav a:focus {
 header {
   padding-top: 3em;
   padding-right: 1em;
-  background-image: url(../img/background-sm.jpg);
+  background-image: url(../img/background-lg.jpg);
+  background-size: cover;
+  text-align: right;
   min-height: 550px;
   color: #FFF;
 }
 header h1 {
   font-size: 3em;
 }
+header .motto {
+  display: block;
+} 
 
 section {
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
+section:nth-of-type(even) {
+  background-color: #dbdce3;
+}
+
 #headline {
+  font-style: italic;
   font-size: 1.25em;
+  text-align: center;
   padding-top: 3em;
   padding-bottom: 3em;
 }
@@ -87,9 +108,18 @@ section {
   text-align: center;
 }
 
+#menu {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 dd {
   margin-left: 1em;
   font-style: italic;
+}
+
+#story {
+  overflow: auto;
 }
 #story img {
   float: right;
@@ -98,12 +128,13 @@ dd {
 }
 
 footer {
+  clear: both;
   padding-top: 1em;
   padding-bottom: 0.5em;
   font-size: 12px;
+  border-top: 3px solid #D87E28;
   background-color: #afb3c2;
 }
-
-#headline p {
-  text-align: left;
+footer > p:last-of-type {
+  text-align: right;
 }
