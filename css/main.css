@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #E9EAEE;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+  color: #BC6026;
+  fill: #BC6026;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+nav li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+svg {
+  height: 1em;
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  font-size: 16px;
+  color: #FFF;
+}
+nav ul {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+nav li {
+  font-variant: small-caps;
+}
+nav a {
+  transition: all 0.3s;
+  color: #FFF;
+  fill: #FFF;
+  text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+  color: #D87E28;
+  fill: #D87E28;
+  text-decoration: none;
+}
+
+header {
+  padding-top: 3em;
+  padding-right: 1em;
+  background-image: url(../img/background-sm.jpg);
+  min-height: 550px;
+  color: #FFF;
+}
+header h1 {
+  font-size: 3em;
+}
+
+section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#headline {
+  font-size: 1.25em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+#headline svg {
+  display: inline-block;
+  height: 1.5em;
+  fill: #BC6026;
+  margin-bottom: 1em;
+}
+
+#cafe {
+  text-align: center;
+}
+
+dd {
+  margin-left: 1em;
+  font-style: italic;
+}
+#story img {
+  float: right;
+  max-height: 400px;
+  margin-left: 1em;
+}
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 12px;
+  background-color: #afb3c2;
+}
+
+#headline p {
+  text-align: left;
+}
