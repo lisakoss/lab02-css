@@ -45,6 +45,7 @@ nav {
 }
 nav ul {
   padding-left: 15px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 nav li {
@@ -67,7 +68,7 @@ nav a:focus {
 
 header {
   padding-top: 3em;
-  padding-right: 1em;
+  padding-right: 3em;
   background-image: url(../img/background-lg.jpg);
   background-size: cover;
   text-align: right;
@@ -107,6 +108,21 @@ section:nth-of-type(even) {
 #cafe {
   text-align: center;
 }
+#cafe h2 {
+  margin-bottom: 0;
+}
+#cafe p {
+  margin-top: 0;
+}
+#cafe a {
+  color: #2e79db;
+  text-decoration: none;
+}
+#cafe a:hover,
+#cafe a:focus {
+  color: #D87E28;
+  text-decoration: underline;
+}
 
 #menu {
     padding-left: 15%;
@@ -120,6 +136,9 @@ dd {
 
 #story {
   overflow: auto;
+}
+#story p {
+  padding-left: 1em;
 }
 #story img {
   float: right;
