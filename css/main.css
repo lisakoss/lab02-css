@@ -3,6 +3,7 @@ body {
   font-size: 12px;
   font-weight: 300;
   background-color: #E9EAEE;
+  color: grey;
   margin: 0;
 }
 
@@ -20,6 +21,7 @@ h2 {
 nav li {
   padding-left: 1em;
   padding-right: 1em;
+  display: inline;
 }
 svg {
   height: 1em;
@@ -30,10 +32,12 @@ nav {
   width: 100%;
   font-size: 16px;
   color: #FFF;
+  padding: 6px;
 }
 nav ul {
   padding-left: 15px;
   margin-bottom: 0;
+  margin-top: 0px;
 }
 nav li {
   font-variant: small-caps;
@@ -54,12 +58,14 @@ nav a:focus {
 header {
   padding-top: 3em;
   padding-right: 1em;
-  background-image: url(../img/background-sm.jpg);
+  background-image: url(../img/background-lg.jpg);
   min-height: 550px;
   color: #FFF;
+  background-size: cover;
 }
 header h1 {
   font-size: 3em;
+  text-align: right;
 }
 
 section {
@@ -71,7 +77,13 @@ section {
   font-size: 1.25em;
   padding-top: 3em;
   padding-bottom: 3em;
+  text-align: center;
 }
+
+#headline p {
+  font-style: italic;
+}
+
 #headline svg {
   display: inline-block;
   height: 1.5em;
@@ -81,16 +93,34 @@ section {
 
 #cafe {
   text-align: center;
+  background-color: #afb3c2;
+}
+
+#cafe a:link, #cafe a:visited, #cafe a:active {
+  color: lightblue;
+  text-decoration: none;
 }
 
 dd {
   margin-left: 1em;
   font-style: italic;
 }
+
+#story {
+  background-color: #afb3c2;
+  overflow: auto;
+}
+
+#story p {
+  padding-left: 25px;
+}
+
 #story img {
   float: right;
   max-height: 400px;
   margin-left: 1em;
+  display: block;
+  border-radius: 10px;
 }
 
 footer {
@@ -98,8 +128,21 @@ footer {
   padding-bottom: 0.5em;
   font-size: 12px;
   background-color: #afb3c2;
+  clear: right;
+  border-top: 2px solid #BC6026;
 }
 
-#headline p {
-  text-align: left;
+footer > p:last-child {
+  text-align: right;
+}
+
+.motto {
+  text-align: right;
+}
+
+#menu dl, #menu h3 {
+  padding-left: 250px;
+}
+#menu h3 {
+  color: #000000;
 }
